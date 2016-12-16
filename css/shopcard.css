@@ -1,0 +1,647 @@
+body{
+	margin: 0;
+	padding: 0;
+	color: #666;
+}
+a:hover{
+	color: #F9458B;
+}
+#shopcard_footer{
+	margin-top: 50px;
+	border-top: 1px solid #b3b3b3;
+}
+/*第一层*/
+.header_topbox{
+	width: 1280px;
+	height: 29px;
+	background: #f2f2f2;
+	border-bottom: 1px solid #e5e5e5;
+	}
+.header_top{
+	width: 1100px;
+	height: 29px;
+	margin: 0 auto;
+	font-size: 12px;
+	line-height: 29px;
+	overflow: hidden;
+	}
+a{
+	cursor: pointer;
+}
+.header_top a:hover{
+	color: #f9458b;
+}
+.header_top a{
+	
+	line-height: 29px;
+	margin-bottom: 5px;
+	padding-left:20px;
+	position: relative;
+	
+	
+}
+.header_top a img{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: absolute;
+	top: -3px;
+	left: 5px;
+}
+.header_top .topnav{
+	float: right;
+}
+.header_top .topnav a{
+	padding: 0 10px;
+	display: inline-block;
+}
+.header_top .topnav span{
+	color: lightgray;
+}
+
+
+/*中间层盒子*/
+#box{
+	width: 1000px;
+	margin: 0 auto;
+												/*隐藏了第一页*/
+	/*display: none;*/                                     
+}
+/*第二层：购物 步骤层*/
+.cardstep{
+	width: 1000px;
+	height: 100px;
+	margin: 0 auto;
+}
+.cardlogo{
+	width: 530px;
+	height: 100px;
+	display: inline-block;
+}
+.step{
+	width: 454px;
+	height: 80px;
+	display: inline-block;
+}
+.step ul{
+	width: 435px;
+	height: 42px;
+	margin-top: 30px;
+	overflow: hidden;
+	font-size: 12px;
+	line-height: 42px;
+	margin: 0;
+	padding: 0 20px;
+	background: url(../img/shopcard/cart_step_ff.png) no-repeat;
+	background-position: 0 0;
+}
+.step li{
+	float: left;
+	list-style: none;
+	width: 144px;
+		
+}
+
+
+/*第三层，购物车商品详细层*/
+#shopping_cart{
+	width: 1000px;
+	height: 378px;
+	
+}
+.cart_title{
+	border-bottom: 2px solid #eaeaea;
+    border-top: none;
+    padding: 10px 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 24px;
+}
+.cart_menu{
+	padding: 15px;
+	overflow: hidden;
+	font-size: 12px;
+	width: 970px;
+	height: 26px;
+}
+.cart_menu_cell1{
+	width: 87px;
+	height: 22px;
+	margin-left: 20px;
+	padding: 2px 0;
+	float: left;
+}
+.cartcheck{
+	background: url(../img/shopcard/yesOrNot.png) repeat-y;
+	background-position-y: 0px;
+    line-height: 22px;
+    height: 22px;
+    display: inline-block;
+    left: 2px;
+    overflow: hidden;
+    
+}
+#shopping_cart input{
+	vertical-align: middle;
+    margin-bottom: 0;
+   	margin: 0;
+    width: 23px;
+    height: 17px;
+    opacity: 0;
+    float: left;
+    cursor: pointer;
+}
+
+.cart_menu_cell2{
+	text-align: center;
+    padding: 2px 0;
+    float: left;
+    width: 280px;
+}
+.cart_menu_cell3,.cart_menu_cell4,.cart_menu_cell5,.cart_menu_cell6,.cart_menu_cell7{
+	float: left;
+	text-align: center;
+    padding: 2px 0;
+    width: 113px;
+    border-left: 1px solid #ddd;
+}
+
+/*//*/
+.cart_list{
+	width: 970px;
+	height: 159px;
+	padding: 0 15px;
+	
+}
+.card_listbox{
+	border: 1px solid #ededed;
+	
+}
+#cartlist_tlt{
+	padding: 14px 26px;
+	padding-left: 20px;
+	background: #fafafa;
+	line-height: 20px;
+    overflow: hidden;
+    font-size: 12px;
+    width: 922px;
+    height: 26px;
+	
+}
+.shopname{
+	float: left;
+	font-size: 18px;
+    color: #333;
+}
+.cartcheck{
+	margin-right: 10px;
+	float: left;
+}
+.productmain{
+	overflow: hidden;
+	padding: 12px 0 12px 19px;
+}
+.productimg{
+	float: left;
+}
+.productimg img{
+	width: 77px;
+	height: 77px;
+}
+
+.it_des{
+	font-size: 12px;
+	margin-left: 10px;
+	float: left;
+	width: 250px;
+}
+.it_des a{
+	color: #222222;
+	text-decoration: none;
+}
+.it_des a:hover{
+	color: #F9458B;
+}
+.it_size{
+	width: 115px;
+	margin-top:3px;
+	float: left;
+	text-align: center;
+}
+.it_price{
+	width: 115px;
+	height: 38px;
+	margin-top: 3px;
+	float: left;
+	text-align: center;
+	font-size: 12px;
+}
+.goodmp{
+	text-decoration: line-through;
+}
+.it_num{
+	width: 115px;
+	margin-top:3px;
+	float: left;
+	text-align: center;
+	height: 80px;
+}
+.numbox{
+	border: 1px solid #b3b3b3;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 76px;
+	height: 28px;
+	line-height: 80px;
+	margin-top: 20px;
+	
+}
+.numbox span:first-child{
+	display: inline-block;
+    width: 24px;
+    height: 28px;
+    float: left;
+    background: url(../img/page1/cut_bg.gif);
+}
+.numbox span:first-child img{
+	display: none;
+}
+.numbox em{
+	display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    font-style: normal;
+    text-align: center;
+    width: 28px;
+    background-color: #fff;
+    float: left;
+    color: black;
+    
+}
+.numbox span:last-child{
+	display: inline-block;
+    width: 24px;
+    height: 28px;
+   float: left;
+   background: url(../img/page1/add_bg.gif);
+}
+.numbox span{
+	position: relative;
+}
+.numbox span img{
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+}
+
+.it_total{
+	width: 115px;
+	height: 38px;
+	margin-top: 3px;
+	float: left;
+	text-align: center;
+	font-size: 12px;
+}
+.it_total span{
+	color: #F9458B;
+	line-height: 70px;
+}
+.it_operate{
+	width: 115px;
+	height: 38px;
+	margin-top: 3px;
+	float: left;
+	text-align: center;
+}
+.it_operate button{
+	font-size: 12px;
+	border: none;
+	background: white;
+	cursor: pointer;
+	margin-top: 27px;
+}
+#cashier_part{
+	
+	background: #fff;
+    border: 1px solid #ddd;
+    border-right: none;
+    height: 58px;
+    margin: 50px 15px 0;
+}
+#cashier_part{
+	background: #fff;
+    border: 1px solid #ddd;
+    border-right: none;
+    height: 18px;
+    margin: 50px 15px 0;
+    padding: 20px 0;
+    position: relative;
+    
+    
+}
+.cardfocus{
+	margin-left: 20px;
+    position: absolute;
+    font-size: 12px;
+    line-height: 22px;
+}
+.newcart{
+	margin-left: 490px;
+    text-align: left;
+    font-size: 12px;
+    color: black;
+    
+}
+.goodnum{
+	color: #F92C87;
+	font-size: 16px
+}
+.ze .goodcost{
+	color: #F92C87;
+	font-size: 18px;
+}
+.gotocash{
+	position: absolute;
+	right: 0;
+	top: 0;	
+    text-align: center;
+    color: #fff;
+    background-color: #fa4b9b;
+    border: 1px solid #fa4b9b;
+    line-height: 56px;
+    margin-top: 0;
+    padding: 0 19px;
+    font-size: 19.5px;
+    cursor: pointer;
+}
+.gotocash:hover{
+	color: white;
+}
+#youmaylove{
+	overflow: hidden;
+	margin-top: 40px;
+	border: 1px solid lightgray;
+	padding: 10px 5px ;
+	background: #fafafa;
+	border-radius: 5px;
+}
+#youmaylove p{
+	color: black;
+	font-size: 20px;
+	padding-left: 20px;
+	border-bottom: 1px solid gainsboro;
+}
+.productlove{
+	color: #666666;
+	width: 140px;
+	float: left;
+	margin: 0 10px;
+	font-size: 12px
+}
+
+#youmaylove .productlove img{
+	width: 140px;
+	height: 140px;
+}
+#youmaylove .productlove b{
+	color: #F34FA1;
+	font-size: 16px;
+	margin-top: 10px;
+	display: block;
+}
+
+/*第二步的确认信息盒子*/
+#checkout{
+	width: 1000px;
+	margin: 40px auto;
+	display: none;
+	
+}
+.rim{
+	width: 998px;
+	
+	border: 1px solid #d8d8d8;
+}
+.rim_title{
+	width: 978px;
+	height: 50px;
+	padding-left: 20px;
+	font-size: 20px;
+	background: #fafafa;
+    height: 50px;
+    line-height: 50px;
+    color: #555;
+}
+.address{
+	width: 958px;
+	overflow: hidden;
+	margin: 0 20px;
+}
+.titnew{
+	display: none;
+	width: 950px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 20px;
+    
+}
+.addressall{
+	display: none;
+}
+.newaddress .ad_table{
+	display: none;
+}
+.addressall{
+	position: relative;
+    width: 979px;
+    
+    float: left;
+    overflow: hidden;
+    padding-bottom: 22px;
+    font-size:12px;
+}
+.addressall ul{
+	overflow: hidden;
+	
+}
+.addressall li{
+	overflow: hidden;
+    float: left;
+    height: 130px;
+    width: 250px;
+    margin-right: 15px;
+    margin-top: 15px;
+    color: #333;
+    font-size: 12px;
+    border: 1px dashed gray;
+    padding: 15px;
+}
+#addnewaddress{
+	color: #fa4b9b;
+    padding-left: 20px;
+    display: block;
+    padding-bottom: 40px;
+    float: left;
+    cursor: pointer;
+    
+}
+.newaddress{
+	border-top: 1px solid #dbd7d8;
+    float: left;
+    padding: 20px 0;
+    overflow: hidden;
+    font-size: 12px;
+}
+.newtlt{
+	background-color: #FBFBFB;
+    padding: 6px;
+    font-size: 14px
+    font-weight: bold;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    width: 938px;
+}
+
+tr{
+	height: 45px;
+	line-height: 45px;
+}
+tr td:first-child{
+	width: 100px;
+	text-align: right;
+}
+tr td:last-child{
+	width: 900px;
+}
+td button:first-child{
+	background: url(../img/shopcard/btn04.gif) no-repeat;
+    padding: 6px 15px;
+    font-weight: 700;
+    display: inline;
+    border-radius: 3px;
+    cursor: pointer;
+    border: white;
+    color: white;
+}
+td button:last-child{
+	background: url(../img/shopcard/btn04c.gif) no-repeat;
+    padding: 5px 25px;
+    color: #8a8a8a;
+    display: inline;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #c8c8c8;
+    cursor: pointer;
+}
+
+
+.Ntit1{
+	font-size: 14px;
+    font-weight: bold;
+    margin: 30px 20px 0px 20px;
+}
+#ckcontent{
+	padding-top: 14px;
+	margin: 0 20px;
+	font-size:12px;
+}
+.cktit{
+	background-color: #FBFBFB;
+    padding: 6px;
+    font-size: 14px;
+}
+.cktit a{
+	float: right;
+	color: #F9458B;
+}
+#ckcontent table thead tr{
+	width: 958px;
+	height: 30px;
+	border-bottom: 1px solid black!important;
+	
+}
+#ckcontent td{
+	text-align: center;
+	padding: 7px 10px;
+}
+
+#ckcontent tbody td{
+	overflow: hidden;
+	
+	
+}
+#ckcontent tbody .td div{
+	float: left;
+	padding: 10px 0;
+}
+#ckcontent tbody .td a{
+	float: left;
+}
+#ckcontent tbody .td a img{
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
+}
+#coupons{
+	position: relative;
+    clear: both;
+    background: #fff;
+    height: auto;
+    min-height: 136px;
+    padding: 10px 5px;
+    padding-top: 20px;
+    margin: 15px 15px 0;
+    border-top: 1px solid #dbd7d8;
+}
+.coupons_left{
+	width: 63%;
+    padding-left: 5px;
+    float: left;
+}
+.coupons_left p{
+	cursor: pointer;
+	color: #222222;
+	font-weight: bold;
+}
+#coupons .coupons_right{
+	width: 35%;
+    
+    overflow: hidden;
+    padding-right: 10px;
+    min-height: 136px;
+    line-height: 26px;
+}
+#coupons .coupons_right table tr{
+	height: 20px;
+}
+
+#gotopay{
+	background: #fa4b9b;
+    height: 42px;
+    line-height: 40px;
+    margin:0 380px;
+    padding: 3px 40px;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    
+}
+
+
+/*第三步确认界面*/
+#paysuccess{
+	display: none;
+	width: 1000px;
+	height: auto;
+	border: 1px solid #d8d8d8;
+	margin: 100px auto;
+	text-align: center;
+	color: #EC0971;
+	font-size: 40px;
+	border-radius: 10px;
+	padding: 100px 0;
+}
+

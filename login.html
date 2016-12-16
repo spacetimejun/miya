@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>蜜芽登陆</title>
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/login.css" />
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="loginbox">
+			<div id="loginlogo">
+				<a href="index.html"><img src="img/login_img/logo.png"/></a>
+			</div>
+			
+			<!--登陆总框-->
+			<div id="loginbord">
+				<!--第一行-->
+				<div class="loginTit">
+					<span class="pink">
+						登陆蜜芽
+					</span>
+					<span class="r">
+						<i>还没有蜜芽账号？</i>
+						<a href="register.html">30秒注册</a>
+					</span>
+				</div>
+				<!--登陆总表单-->
+				
+					<!--用户电话输入框-->
+					<div class="phonenumbox">
+						<p id="ifok">
+							<span>
+								请输入正确的手机号码，且为11位纯数字格式
+							</span>
+							<span class="downimg">
+								<img src="img/register_img/tipnamebg.png"/>
+							</span>
+						</p>
+						<span id="peopleicon">
+							<img src="img/login_img/usericon.png"/>
+						</span>
+						<input type="text" id="phonenum" value="" placeholder="手机号"/>
+						
+					</div>
+					
+					<!--密码框-->
+					<div class="passwordbox">
+						<p id="ifok">
+							<span>
+								长度为6-14个字符
+							</span>
+							<span class="downimg">
+								<img src="img/register_img/tipnamebg.png"/>
+							</span>
+						</p>
+						<span id="passwordicon">
+							<img src="img/login_img/passwordicon.png"/>
+						</span>
+						<input type="password" id="password" value="" placeholder="密码"/>
+					</div>
+					
+					<!--短信验证码框-->
+					<div id="checkcodebox">
+						<input type="text" name="" id="checkcode" value="" placeholder="短信验证码"/>
+						<button>获得短信验证码</button>
+					</div>
+					
+					<!--自动登陆选择框-->
+					<div id="checkbox">
+						<input type="checkbox" name="" id="" value="" /> 自动登录
+						<a href="#">忘记密码?</a>
+					</div>
+					<!--登陆提交按钮-->
+					<input type="submit" name="" id="loginbtn" value="登录" />
+					<!--微信登陆选择框-->
+					<p class="wxlogin">
+						 &nbsp;&nbsp;使用以下账号登录：
+						<a href="#"><img src="img/login_img/login_wx.jpg"/></a>
+					</p>
+				
+			</div>
+			
+		</div>
+		<!--底部地址信息-->
+		<p class="adress">
+Copyright ©2016 北京花旺在线商贸有限公司 Miyabaobei.com 保留一切权利。客服热线： 400-789-2000。京ICP证140430号 京ICP备14006215号</p>
+	</body>
+</html>

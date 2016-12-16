@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/shopcard.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/footer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/shopcard.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--第一层-->
+		<div class="header_topbox">
+			<div class="header_top">
+				<a>
+					<img src="img/header_img/header_phone.png"/>
+					&nbsp;&nbsp;手机蜜芽
+				</a>
+				<div class="topnav">
+					你好，<b id="username"></b>欢迎来到蜜芽！
+					<a class="a_border" href="login.html">登陆</a>
+					<span>|</span>
+					<a href="register.html">免费注册</a>
+					<a href="#">帮助中心</a>
+				</div>
+			</div>
+		</div>
+			
+		
+		<!--第二层-->
+		<div class="cardstep">
+			<div class="cardlogo">
+				<a href="index.html"><img src="img/shopcard/logo.png"/></a>
+			</div>
+			<div class="step">
+				<ul>
+					<li>1.我的购物车</li>
+					<li>2.填写核对订单信息</li>
+					<li>3.成功提交订单</li>
+				</ul>
+			</div>
+		</div>
+		<div id="box">
+			<!--第三层-->
+			<div id="shopping_cart">
+				<div class="cart_title">
+					<span id="">
+						我的购物车
+					</span>
+				</div>
+				<div class="cart_menu">
+					<div class="cart_menu_cell1">
+						<div class="cartcheck">
+							<input type="checkbox" name="" id="" value="" />
+							<label>全选</label>
+						</div>
+					</div>
+					<div class="cart_menu_cell2">
+						商品
+					</div>
+					<div class="cart_menu_cell3">
+						规格
+					</div>
+					<div class="cart_menu_cell4">
+						单价
+					</div>
+					<div class="cart_menu_cell5">
+						数量
+					</div>
+					<div class="cart_menu_cell6">
+						小计
+					</div>
+					<div class="cart_menu_cell7">
+						操作
+					</div>
+				</div>
+				<div class="cart_list">
+					<div class="card_listbox">
+						<div id="cartlist_tlt">
+							<div class="cartcheck" >
+								<input type="checkbox" name="" class="dlk" value="" />
+							</div>
+							<div class="shopname">
+								品创贸易童装童鞋专营店
+							</div>
+						</div>
+						<div class="productmain">
+							<div class="cartcheck" >
+								<input type="checkbox" name="" class="dlk" value="" />
+							</div>
+							<div class="productimg">
+								<a href="page1.html">
+									<img src="img/shopcard/productimg.jpg"/>
+								</a>
+							</div>
+							<div class="it_des">
+								<p>
+									<a href="page1.html">
+                                     	琢伊儿 zuoyier 儿童发饰发箍 浅粉                                                    
+									</a>
+								</p>
+								<p>
+									商品编号：1273057
+								</p>
+							</div>
+							
+							<div class="it_size">
+								
+							</div>
+							
+							<div class="it_price">
+								<p class="goodsp">19.00</p>
+								<p class="goodmp">38.00</p>
+							</div>
+							
+							<div class="it_num">
+								<div class="numbox">
+									<span >
+										<img src="img/page1/cut_icon.gif"/>
+									</span>
+									<em id="goodsnum2">1</em>
+									<span >
+										<img src="img/page1/add_icon.gif" />
+									</span>
+								</div>
+							</div>
+							
+							<div class="it_total">
+								¥<span>19</span>
+							</div>
+							
+							<div class="it_operate">
+								<button><a>删除</a></button>
+							</div>
+						</div>
+					</div>
+					
+						
+				</div>
+				<div id="cashier_part">
+					<div class="cardfocus">
+						<div class="cartcheck">
+							<input type="checkbox" name="" id="" value="" />
+							<label>全选</label>
+						</div>
+						<a>删除选择商品</a>
+						<a>清除无效商品</a>
+						<a>移入收藏夹</a>
+					</div>
+					<div class="newcart">
+						<div class="ze">
+							<span id="">
+								已选择商品 
+								<b class="goodnum">1</b>
+								件
+							</span>
+							<span >
+								合计（不含运费和进口税）：
+								￥<b class="goodcost">19.00</b>
+								
+							</span>
+						</div>
+					</div>
+					<a  class="gotocash">去结算</a>
+				</div>	
+			</div>
+			<div id="youmaylove">
+				<p>猜你喜欢</p>
+				<div class="productlove">
+					<a><img src=""/></a>
+					<a><span id="">
+						
+					</span></a><br />
+					<b></b>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--第二步的确认信息盒子-->
+		<div id="checkout">
+			<div class="rim">
+				<div class="rim_title">
+					填写并核对订单信息
+				</div>
+				<div class="address">
+					<div class="titnew">
+						收货人信息
+					</div>
+					<div class="addressall">
+						<ul id="adul">
+							<!--<li id="adlist">
+								<p class="ad_p1"></p>
+								<p class="ad_p2"></p>
+								<p class="ad_p3"></p>
+								
+							</li>-->
+						</ul>
+					</div>
+					<span id="addnewaddress">
+						+新增收货地址
+					</span>
+					<div class="newaddress">
+						<div class="newtlt">
+							收货人信息
+						</div>
+						<table class="ad_table" border="0" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr class="">
+									<td>
+										 *收货人：
+									</td>
+									<td>
+										<input id="ad_name" type="text" />
+										<span id="">
+											请您填写收货人姓名
+										</span>
+									</td>
+								</tr>
+								<tr class="">
+									<td>
+										 *所在地区：
+									</td>
+									<td>
+										<span id="span_province">
+											<select name="ship_province" id="ship_province">
+												<option value="">请选择省</option>
+												
+											</select>
+										</span>
+										<span id="span_city">
+											<select name="ship_city" id="ship_city">
+												<option value="">请选择市</option>
+												
+											</select>
+										</span>
+										
+										
+									</td>
+								</tr>
+								<tr class="">
+									<td>
+										 *详细地址：
+									</td>
+									<td>
+										<input type="text" id="ad_ad" style="width: 300px;"/>
+										<span id="">
+											请您填写收货人详细地址
+										</span>
+									</td>
+								</tr>
+								<tr class="">
+									<td>
+										 *手机号码：
+									</td>
+									<td>
+										<input type="text" id="ad_phone01"/>
+										<span id="">
+											或  &nbsp;固定电话
+										</span>
+										<input type="text" id="ad_phone02"/>
+										<span id="">
+											请填写收货人手机号码
+										</span>
+									</td>
+								</tr>
+								<tr >
+									<td>
+										 &nbsp;
+									</td>
+									<td>
+										<button id="savead">保存收货人信息</button>
+										<button>取消</button>
+									</td>
+								</tr>
+								
+								
+								
+							</tbody>
+						</table>
+						<div class="Ntit1">
+							商品清单
+						</div>
+						<div id="ckcontent">
+
+							<div class="cktit">
+								<a id="backtostep1">返回修改购物车</a>
+								品创贸易童装童鞋专营店
+							</div>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<thead>
+									<tr>
+										<td style="width: 445px;">商品</td>
+										<td style="width: 180px;">规格</td>
+										<td style="width: 69px;">单价</td>
+										<td style="width: 115px;">数量</td>
+										<td style="width: 70px;">小计</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="td">
+											<a><img src="img/shopcard/productimg.jpg"/></a>
+											<div class="">
+												<a>琢伊儿 zuoyier 儿童发饰发箍 浅粉</a>
+											</div>
+										</td>
+										
+										
+										<td style="width: 180px;"></td>
+										<td style="width: 69px;">￥19.00</td>
+										<td class="goodnum" style="width: 115px;">1</td>
+										<td class="goodcost" style="width: 70px;">￥19</td>
+										
+									</tr>
+								</tbody>
+							</table>
+							
+							<div id="coupons">
+								<div class="coupons_left">
+									<p>
+										+点击使用代金券
+									</p>
+									<p>
+										+点击使用账户余额
+									</p>
+								</div>
+								<div class="coupons_right">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td style="width: 274px; text-align: right;">
+													<span id="goodsnum">
+														1
+													</span>
+													 件商品，总商品金额：
+												</td>
+												<td id="goodscost" style="width: 64px;">
+													¥19.00
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 274px; text-align: right;">
+													<span id="goodsnum">
+														<a><img src="img/shopcard/problem.png"/></a>
+													</span>
+													 运费
+												</td>
+												<td id="sendcost" style="width: 64px;">
+													¥10.00
+												</td>
+											</tr>
+											<tr>
+												<td style="width: 274px; text-align: right;">
+													
+													应付总额：：
+												</td>
+												<td class="allcost" style="width: 64px;">
+													¥29.00
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							
+						</div>
+						<button id="gotopay">结算</button>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		
+		<!--第三步的确认信息盒子-->
+		<div id="paysuccess">
+			<span id="">
+				交易成功！祝您购物愉快，欢迎再次光临！
+			</span>
+		</div>
+		<div id="shopcard_footer">
+			
+		</div>	
+	</body>
+</html>

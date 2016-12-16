@@ -1,0 +1,149 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+#footerbox{
+	width: 1100px;
+	height: 490px;
+	margin: 0 auto;
+	
+}
+#footerbox a:hover{
+	color:#f9458b
+}
+.footerTop{
+	width: 1100px;
+	height: 128px;
+	padding: 10px 0 0px;
+	border-bottom: 1px solid lightgray;
+	overflow: hidden;
+}
+.footerTop a{
+	width: 167px;
+	height: 102px;
+	
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	float: left;
+	margin: 0 8px;
+}
+.footerTop i{
+	width: 60px;
+	height: 60px;
+	margin: 0px 53px 10px;
+	display: block;
+}
+.footerTop .icon1{
+	background: url(../img/footer_img/footer_icon.png) no-repeat top left;
+}
+.footerTop .icon2{
+	background: url(../img/footer_img/footer_icon.png) no-repeat -60px 0px;
+}
+.footerTop .icon3{
+	background: url(../img/footer_img/footer_icon.png) no-repeat -120px 0px;
+}
+.footerTop .icon4{
+	background: url(../img/footer_img/footer_icon.png) no-repeat -180px 0px;
+}
+.footerTop .icon5{
+	background: url(../img/footer_img/footer_icon.png) no-repeat -240px 0px;
+}
+.footerTop .icon6{
+	background: url(../img/footer_img/footer_icon.png) no-repeat -300px 0px;
+}
+
+.footerTop a b{
+	display: block;
+	color: black;
+	font-size: 16px;
+	padding-bottom: 5px;
+}
+.footerTop a{
+	font-size: 12px;
+	color: gray;
+}
+
+#footerCenter{
+	width: 1100px;
+	padding-top: 18px;
+}
+#footerCenter #left{
+	display: inline-block;
+	width: 744px ;
+	height: 188px;
+	padding-left: 30px;
+	border-right: 1px solid lightgray;
+}
+#footerCenter #left li{
+	list-style: none;
+	padding-left: 32px;
+	padding-top: 9px;
+}
+#footerCenter #left a{
+	font-size: 12px;
+	text-decoration: none;
+	color:gray;
+}
+#footerCenter #left a:hover{
+	color: #F9458B;
+}
+#footerCenter #left b{
+	font-size: 14px;
+}
+#footerCenter #left ul{
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 132px;
+}
+#footerCenter #left ul:last-child{
+	width: 200px;
+}
+
+#footerCenter #right{
+	float: right;
+	margin-right: 120px;
+	margin-top: 10px;
+}
+#right strong{
+	width: 160px;
+	display: block;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+#right .phonemiy{
+	width: 66px;
+	float: left;
+	}
+#right .focus{
+	float: right;
+	width: 76px;
+	position: relative;
+}
+#right .focus .hideImg{
+	position: absolute;
+	top: 7px;
+	left: -180px;
+	display: none;
+}
+
+#footerbottom{
+	width: 100%;
+	border-top: 1px solid lightgray;
+	text-align: center;
+	font-size: 12px;
+}
+#footerbottom p a{
+	text-decoration: none;
+	color: black;
+	padding: 0 8px;
+}
+#footerbottom p{
+	color: gray;
+	line-height: 18px;
+}
+#footerbottom p img{
+	width: 100px;
+	height: 33px;
+}

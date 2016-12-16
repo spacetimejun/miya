@@ -1,0 +1,425 @@
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	}
+a{
+	text-decoration: none;
+}
+.color{
+	color: deeppink;
+}
+/*第一层样式*/
+.header_box{
+	width: 100%;
+	height: 207px;
+	}
+.header_topbox{
+	width: 100%;
+	height: 29px;
+	background: #f2f2f2;
+	border-bottom: 1px solid #e5e5e5;
+	}
+.header_top{
+	width: 1100px;
+	height: 29px;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #666;
+	line-height: 29px;
+	overflow: hidden;
+	}
+a{
+	cursor: pointer;
+}
+.header_top a:hover{
+	color: #f9458b;
+}
+.header_top a{
+	
+	line-height: 29px;
+	margin-bottom: 5px;
+	padding-left:20px;
+	position: relative;
+	
+	
+}
+.header_top a img{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: absolute;
+	top: -3px;
+	left: 5px;
+}
+.header_top .topnav{
+	float: right;
+}
+.header_top .topnav a{
+	padding: 0 10px;
+	display: inline-block;
+}
+.header_top .topnav span{
+	color: lightgray;
+}
+
+
+/*第二层样式*/
+.header_centerbox{
+	width: 100%;
+	height: 131px;
+}
+.header_center{
+	width: 1100px;
+	height: 131px;
+	margin: 0 auto;
+	overflow: hidden;
+	
+	position: relative;
+}
+.header_center .logo{
+	float: left;
+	width: 230px;
+	height: 131px;
+}
+.header_center .logo a img{
+	width: 230px;
+	height: 70px;
+	display: inline-block;
+	margin: 30px 0;
+}
+.header_center .search_box{
+	width: 678px;
+	height: 131px;
+	float: right;
+	
+	color: lightgray;
+	
+}
+.header_center .search{
+	width: 475px;
+	padding-bottom: 10px;
+	
+	margin-top: 48px;
+	overflow: hidden;
+}
+.header_center .search .searchtext{
+	width: 373px;
+	height: 30px;
+	padding-left: 10px;
+	border: 2px solid #f9458b;
+}
+.header_center .search .searchbtn{
+	width: 88px;
+	height: 36px;
+	background:#f9458b;
+	border: none;
+	color: white;
+	float: right;
+	cursor: pointer;
+}
+.search_box a{
+	text-decoration: none;
+	padding: 0 10px;
+	color:#666 ;
+	font-size: 12px;
+}
+.search_box .seacrh_ative{
+	color: #f9458b;
+} 
+.search_box a:hover{
+	color: #f9458b;
+}
+
+.shoppingcard{
+	float: right;
+	width: 142px;
+	height: 34px;
+	border: 1px solid lightgray;
+	overflow: hidden;
+	line-height: 32px;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 48px;
+	background: white;
+}
+.shoppingcard span{
+	width: 36px;
+	height: 34px;
+	background:#f9458b;
+	display: inline-block;
+	float: left;
+	
+}
+.shoppingcard b{
+	padding-left:38px ;
+	color: #666;
+	font-weight: normal;
+		
+}
+.search_box .cardbox{
+	width: 300px;
+	height: 40px;
+	border: 1px solid #f9458b;
+	position: absolute;
+	right: 0;
+	top: 89px;
+	display: none;
+	color: black;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+}
+.cardbox .spanone{
+	/*display: none;*/
+}
+.cardbox .spantwo{
+	display: none;
+	float: left;
+	padding: 5px;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+	display: block;
+}
+
+.spantwo img{
+	width: 30px;
+	height: 30px;
+	padding-right: 20px;
+}
+.spantwo a{
+	position: absolute;
+	top: 0;
+	width: 200px;
+}
+.spantwo a b{
+	color: #FA4B9B;
+}
+
+/*第三部分，导航部分*/
+.header_navbox{
+	width: 100%;
+	height: 46px;
+	background: #ff3893;
+	
+}
+.header_nav{
+	width: 1100px;
+	height: 46px;
+	margin: 0 auto;
+	position: relative;
+}
+.menus{
+	position: absolute;
+	top: -3px;
+	z-index: 100;
+}
+.tit{
+	width: 200px;
+	height: 52px;
+	background: #f92c87;
+	color: white;
+	line-height: 52px;
+	padding-left: 30px;
+}
+.tit h3{
+	padding: 0;
+	margin: 0;
+}
+.nav_ul{
+	
+	margin: 0;
+	padding: 0 0 0 230px;
+	height: 46px;
+	line-height: 46px;
+	position: relative;
+	}
+.nav_ul li{
+	float: left;
+	list-style: none;
+	
+}
+.nav_ul li a{
+	color: white;
+	padding: 15px 30px;
+	
+}
+.nav_ul li a i{
+	width: 20px;
+	display: inline-block;
+	height: 20px;
+	
+}
+.nav_ul .nav_active{
+	background:#ec0971;
+}
+
+.nav_ul li a:hover{
+	background: #ec0971 ;
+}
+.nav_ul .list2{
+	width: 144px;
+	height: 138px;
+	position: absolute;
+	right: 434px;
+	top: 46px;
+	display: none;
+	z-index: 1000;
+	background: white;
+}
+.nav_ul .list2 a{
+	
+	color: black;
+	display: block;
+	text-align: center;
+	line-height:46px ;
+}
+.nav_ul .list2 a:not(:last-child){
+	border-bottom: 1px dashed gray;
+}
+
+.dls{
+	width: 230px;
+	height: 610px;
+	background: lightgray;
+	
+}
+.dls a:hover{
+	color:#ec0971 ;
+}
+.dls dl{
+	margin: 0;
+	width: 230px;
+	height: 75px;
+	
+	position: relative;
+}
+.dls dl dt{
+	width: 215px;
+	height: 67px;
+	background: rgba(255,255,255,.5);
+	position: relative;
+	padding-top: 8px;
+	padding-left: 15px;
+}
+.dls dl:not(:last-child){
+	border-bottom: 1px dashed gray;
+}
+.dls dl dt strong{
+	
+}
+.dls dl dt strong a{
+	font-style: normal;
+	color:#ec0971 ;
+}
+.dls dl dt p{
+	margin: 0;
+	padding: 5px 48px 9px 0;
+}
+.dls dl dt p a{
+	color: gray;
+	font-size: 12px;
+}
+.dls dl dt i{
+	font-style: normal;
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	color: darkgray;
+	font-size: 30px;
+}
+.dls dd{
+	position: absolute;
+	background: white;
+	
+	left: 230px;
+	margin: 0;
+}
+
+.dls_01 dd,.dls_02 dd,.dls_03 dd{
+	top: -0px;
+}
+.dls_01 .dls_01_dd{
+	width: 570px;
+	height: 416px;
+	overflow: hidden;
+	display: none;
+}
+#dd_box{
+	width: 250px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+	float: left;
+}
+#dd_box h3{
+	padding-bottom: 8px;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #222;
+}
+#dd_box p>a{
+	display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    line-height: 2;
+    font-size: 12px;
+	color: #fa4b9b;	
+}	
+	
+	
+	
+.dls_02 .dls_02_dd{
+	width: 570px;
+	height: 452px;
+	display: none;
+}
+.dls_03 .dls_03_dd{
+	width: 580px;
+	height: 387px;
+	display: none;
+}
+.dls_04 dd{
+	top: -76px;
+}
+.dls_04 .dls_04_dd{
+	width: 570px;
+	height: 452px;
+	display: none;
+}
+.dls_05 dd{
+	top:-86px;
+}
+.dls_05 .dls_05_dd{
+	width: 570px;
+	height: 387px;
+	display: none;
+}
+.dls_06 dd{
+	top: -162px;
+}
+.dls_06 .dls_06_dd{
+	width: 572px;
+	height: 387px;
+	display: none;
+}
+.dls_07 dd{
+	top: -236px;
+}
+.dls_07 .dls_07_dd{
+	width: 572px;
+	height: 387px;
+	display: none;
+}
+.dls_08 dd{
+	top: -314px;
+}
+.dls_08 .dls_08_dd{
+	width: 580px;
+	height: 387px;
+	display: none;
+}
+
+

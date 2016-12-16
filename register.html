@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>蜜芽注册</title>
+		<link rel="stylesheet" href="css/register.css" />
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="registerbox">
+			<div id="registerlogo">
+				<a href="index.html"><img src="img/login_img/logo.png"/></a>
+			</div>
+			<!--注册总框-->
+			<div id="registerbord">
+				<!--第一行-->
+				<div class="registerTit">
+					<span class="pink">
+						注册蜜芽
+					</span>
+					<span class="r">
+						<i>已有蜜芽账号？</i>
+						<a href="login.html">登陆</a>
+					</span>
+				</div>
+				<!--下面所有的注册表单-->
+					<!--用户电话输入框-->
+					<div class="phonenumbox">
+						<p id="ifok">
+							<span class="alert">
+								请输入正确的手机号码，且为11位纯数字格式
+							</span>
+							<span class="downimg">
+								<img src="img/register_img/tipnamebg.png"/>
+							</span>
+						</p>
+						<span id="peopleicon">
+							<img src="img/login_img/usericon.png"/>
+						</span>
+						<input type="text" id="phonenum" value="" placeholder="手机号"/>
+						
+					</div>
+					<!--验证码框-->
+					<div id="chiefcodebox">
+						<input type="text" name="" id="chiefcodetext" value="" placeholder="输入验证码"/>
+						<a>&nbsp;看不清</a>
+						<a><img id="chiefcode" src="img/register_img/cherfcode.png"/></a>
+					</div>
+					<!--短信验证码框-->
+					<div id="checkcodebox">
+						<input type="text" name="" id="checkcode" value="" placeholder="短信验证码"/>
+						<button>获得短信验证码</button>
+					</div>
+					<!--密码框-->
+					<div class="passwordbox">
+						<p id="ifok">
+							<span class="alert">
+								长度为6-14个字符，建议使用字母加数字或符号组合
+							</span>
+							<span class="downimg">
+								<img src="img/register_img/tipnamebg.png"/>
+							</span>
+						</p>
+						<span id="passwordicon">
+							<img src="img/login_img/passwordicon.png"/>
+						</span>
+						<input type="password" id="password" value="" placeholder="密码"/>
+					</div>
+					<!--密码确认框-->
+					<div class="passwordbox2">
+						<p id="ifok">
+							<span class="alert">
+								长度为6-14个字符，建议使用字母加数字或符号组合
+							</span>
+							<span class="downimg">
+								<img src="img/register_img/tipnamebg.png"/>
+							</span>
+						</p>
+						<span id="passwordicon">
+							<img src="img/login_img/passwordicon.png"/>
+						</span>
+						<input type="password" id="password2" value="" placeholder="再次确认密码"/>
+					</div>
+					
+					<!--同意条款框-->
+					<div id="checkbox">
+						<input type="checkbox" name="" id="" value="" /> 我已阅读并接受
+						<a href="#">《蜜芽服务条款》</a>
+					</div>
+					<!--注册提交按钮-->
+					<input type="button" name="" id="registerbtn" value="注册" />
+					
+			</div>
+			
+		</div>
+		
+		<!--底部地址信息-->
+		<p class="adress">
+Copyright ©2016 北京花旺在线商贸有限公司 Miyabaobei.com 保留一切权利。客服热线： 400-789-2000。京ICP证140430号 京ICP备14006215号</p>
+	</body>
+</html>
